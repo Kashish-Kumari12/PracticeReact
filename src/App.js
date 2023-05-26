@@ -16,7 +16,7 @@ import Welcome from './Components/Welcome';
 import HelloClass from './Components/HelloClass';
 import Count from './Components/Count';
 import Binding from './Components/binding';
-import Parents from './Components/Parents';
+// import Parents from './Components/Parents';
 import HookOne from './Hooks/HookOne';
 import HookTwo from './Hooks/HookTwo';
 import HookArray from './Hooks/HookArray';
@@ -28,6 +28,12 @@ import Rendering from './Components/Rendering';
 import Form from './Components/Form';
 import ClickCounter from './HOC/ClickCounter';
 import MouseClick from './HOC/MouseClick';
+import Question from './Paper/Question';
+import Propsty from './Props/PropsTypes';
+import GrandChild from './Props/GrandChild';
+import Two from './Props/Two';
+import One from './Props/One';
+import FetchingQuestion from './Paper/FetchingQuestion'
 export const UserContext=createContext()
 export const ChannelContext=createContext()
 function App() {
@@ -78,9 +84,15 @@ function App() {
       </UserContext.Provider> */}
       {/* <Rendering/> */}
       {/* <Form/> */}
-      <ClickCounter name="Kashish Kirplani"/>
-      <MouseClick/>
-      
+      {/* <ClickCounter name="Kashish Kirplani"/>
+      <MouseClick/> */}
+      {/* <Question initial={5} min={1} max={10}/>
+       */}
+       {/* <Propsty name={1} lastName="Kirplaniiii"/> */}
+      {/* <One/>
+      <Two/>  */}
+       {/* <GrandChild/> */}
+       <FetchingQuestion/>
     </div>
   );
 }

@@ -22,8 +22,16 @@ import HookTwo from './Hooks/HookTwo';
 import HookArray from './Hooks/HookArray';
 import HookEffect from './Hooks/HookEffect';
 import ClassEffect from './Hooks/ClassEffect';
+import ContextA from './Hooks/ContextA';
+import { createContext } from 'react';
+import Rendering from './Components/Rendering';
+import Form from './Components/Form';
+import ClickCounter from './HOC/ClickCounter';
+import MouseClick from './HOC/MouseClick';
+export const UserContext=createContext()
+export const ChannelContext=createContext()
 function App() {
-
+ 
   return (
     <div className="App">
       {/* <>
@@ -62,7 +70,17 @@ function App() {
       {/* <HookTwo/> */}
       {/* <HookArray/> */}
       {/* <HookEffect/> */}
-      <ClassEffect/>
+      {/* <ClassEffect/> */}
+      {/* <UserContext.Provider value={"Kashish"}>
+        <ChannelContext.Provider value={"CS Student"}>
+        <ContextA/>
+        </ChannelContext.Provider>
+      </UserContext.Provider> */}
+      {/* <Rendering/> */}
+      {/* <Form/> */}
+      <ClickCounter name="Kashish Kirplani"/>
+      <MouseClick/>
+      
     </div>
   );
 }
